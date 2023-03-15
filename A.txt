@@ -1,1 +1,5 @@
 Inside file A
+
+welcomee to Opentechz
+
+We are learning Git hub Now
