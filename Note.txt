@@ -116,3 +116,15 @@ sort() – sort elements in an array.
 
 forEach() – loop through array elements.
 
+
+Template literals (Template strings)
+-------------------------------------
+Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
+
+
+
+
+
+every()
+------
+- 
