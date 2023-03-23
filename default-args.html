@@ -1,0 +1,21 @@
+<html>
+    <head>
+    </head>
+    <body>
+      <script>
+        function createDiv(height = '100px', width = '100px',bgcolor='yellow', border = 'solid 1px red') {
+    let div = document.createElement('div');
+    div.style.height = height;
+    div.style.width = width;
+    div.style.border = border;
+    div.style.backgroundColor = bgcolor;
+    document.body.appendChild(div);
+    return div;
+}
+
+createDiv();
+createDiv('500px','500px','green');
+        </script>
+    </body>
+    
+</html>

@@ -188,4 +188,36 @@ Function in javascript :
 
    - Function Hoisting :
 
-       Function hoisting is a mechanism that the JavaScript engine physically moves function declarations to the top of the code before executing them.   
+       Function hoisting is a mechanism that the JavaScript engine physically moves function declarations to the top of the code before executing them.
+
+
+Default Argument in JS Function :
+
+function sum(x=0,y=0)
+{
+   console.log(`x=$x`);
+   console.log(`x=$x`);
+   return x+y;
+}
+
+let res = sum();
+console.log(res);
+
+let res = sum(12);
+console.log(res);
+
+let res = sum(12,90);
+console.log(res);
+
+Javascript Prototype:
+--------------------
+
+- Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+
+- The prototype chain :
+
+- Every object in JavaScript has a built-in property, which is called its prototype. 
+
+- The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain.
+
+- The chain ends when we reach a prototype that has null for its own prototype.

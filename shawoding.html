@@ -1,0 +1,31 @@
+<body>
+    <script>
+           let student={
+               fname :'Rahul',
+               lname :'Kumar',
+               fullname(){
+                   return this.fname + ' '+this.lname;
+               }
+           };
+
+            function Student(fname,lname)
+            {
+               this.fname = fname ;
+               this.lname = lname ;
+               this.fullname = function(){
+                   return this.fname + ' '+this.lname;
+               }
+            }
+
+            let s1 = new Student('Alok','Kumar');
+            
+            s1.fullname = function(){
+                return "Content has been changed by child";
+            }
+            console.log(s1);
+            console.log(s1.fullname()) //
+            console.log(student.fullname());
+            console.log(Object.hasOwn(s1,'fname'));
+            console.log(Object.hasOwn(s1,'nname'));
+    </script>
+</body>
