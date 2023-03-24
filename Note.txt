@@ -221,3 +221,24 @@ Javascript Prototype:
 - The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain.
 
 - The chain ends when we reach a prototype that has null for its own prototype.
+
+- When you try to access a property of an object: if the property can't be found in the object itself, the prototype is searched for the property. If the property still can't be found, then the prototype's prototype is searched, and so on until either the property is found, or the end of the chain is reached, in which case undefined is returned.\
+
+
+
+Inheritance in JS :
+--------------------
+
+- JavaScript doesn’t use classical inheritance. Instead, it uses prototypal inheritance.
+
+- In prototypal inheritance, an object “inherits” properties from another object via the prototype linkage.
+
+- The [object Object] is the default string representation of an object.
+
+- To access the prototype of the person object, you can use the __proto__ property as follows
+  
+      console.log(person.__proto__);
+
+- console.log(person.__proto__ === Object.prototype); // true
+
+- 
