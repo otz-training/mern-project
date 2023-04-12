@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+     <style>
+        .text-warning{
+            color:orange;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 class="text-warning" id="head">hello</h1>
+        <button onclick="show()">show</button>
+         <p id="p1">Paragraph1</p>
+         <p class="text-warning">Paragraph2</p>
+         <p>Paragraph3</p>
+         <p class="text-warning">Paragraph4</p>
+         <p>Paragraph5</p>
+         <div class="text-warning"></div>
+         <div></div>
+         <div class="text-warning"></div>
+         <div></div>
+         <input type="radio" name="rbt1" value="Choice-1"/>Choice-1
+         <input type="radio" name="rbt1" value="Choice-2"/>Choice-2
+         <input type="radio" name="rbt1" value="Choice-3"/>Choice-3
+         <input type="radio" name="rbt1" value="Choice-4"/>Choice-4
+        <script>
+            function show()
+            {
+                let id = document.getElementById("head");
+               
+                console.log("Current Node type is "+id.nodeType);
+                console.log("Current Node type is "+id.nodeName);
+                console.log("Current Node type is "+id.nodeValue);
+                
+                console.log("Current Node type is "+id.firstChild.nodeType);
+                console.log("Current Node type is "+id.firstChild.nodeName);
+                console.log("Current Node type is "+id.firstChild.nodeValue);
+                let p1 = document.getElementById("p1");
+                console.log(p1.innerText);
+                let paragraphs = document.querySelectorAll("p");
+                console.log(paragraphs);
+                for(let i=0;i<paragraphs.length;i++)
+                {
+                    console.log(paragraphs[i].innerText);
+                    console.log(paragraphs[i].nodeType);
+                }
+
+                let choice = document.getElementsByName("rbt1");
+                console.log(choice);
+                for(let i=0;i<choice.length;i++)
+                {
+                    if(choice[i].checked==true)
+                    {
+                        alert(choice[i].value +"has been selected");
+                    }
+                }
+
+                let eleByClass = document.getElementsByClassName("text-warning");
+                console.log(eleByClass);
+                for(let i=0;i<eleByClass.length;i++)
+                {
+                    eleByClass[i].setAttribute("style","color:red"); 
+                }
+            }
+        </script>
+    </body>
+</html>

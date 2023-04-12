@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript parentNode</title>
+</head>
+<body>
+    <div id="main">
+        <p class="note">
+            <span>First</span>
+            <span>Second</span>
+            <span>Last</span>
+        </p>
+    </div>
+     
+    <script>
+        let note = document.querySelector('.note');
+        console.log(note.parentNode);
+        console.log(note.firstChild);
+        console.log(note.lastChild);
+    </script>
+</body>
+</html>

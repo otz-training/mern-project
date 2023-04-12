@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS DOM paragraph style</title>
+</head> 
+<body >
+<p id ='text'>JavaScript </p> 
+<div id="d1">
+<button id="jsstyle">Style</button>
+</div>
+<script>
+        btn = document.getElementById('jsstyle');
+        btn.addEventListener("click",js_style);
+     function js_style(){
+        // let p = document.getElementById('text');
+        // //p.style ="font-size :40px; font-family:Georgia, 'Times New Roman', Times, serif; color:green";
+        // p.setAttribute("style","font-size :40px; font-family:Georgia, 'Times New Roman', Times, serif; color:red"); 
+        let div = document.createElement("div");
+        div.innerHTML ="<h1>Welcome to DOM Tutorial</h1>";
+        div.setAttribute("style","color:red");
+        div.setAttribute("title","Best Tutorial");
+        let container = document.getElementById("d1");
+        container.appendChild(div);
+
+       
+    }
+    </script>
+</body>
+</html>
