@@ -1,0 +1,17 @@
+ul{
+    display:flex;
+}
+li{
+    display: inline;
+    text-decoration: none;
+    margin: 1px;
+    padding: 5px;
+    border: 1px solid red;
+}
+
+.link{
+    text-decoration: none;
+}
+li:hover{
+    background-color: yellow;
+}

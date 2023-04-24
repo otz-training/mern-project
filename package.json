@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/otz-training/mern-project/issues"
   },
-  "homepage": "https://github.com/otz-training/mern-project#readme"
+  "homepage": "https://github.com/otz-training/mern-project#readme",
+  "devDependencies": {
+    "react-router-dom": "^6.10.0"
+  }
 }
