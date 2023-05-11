@@ -5,10 +5,12 @@ import Timer from './Components/Timer';
 import Counter from './Components/Counter';
 import TestRef from './Components/TestRef';
 import Focus from './Components/Focus';
+import Example from './Components/Example';
 function App() {
   return (
     <div className="App">
-       <h1>React hook Tutorial</h1>
+      
+        <h1>React hook Tutorial</h1>
        <hr/>
        <FavoriteColor/>
        <hr/>
@@ -23,7 +25,9 @@ function App() {
        <TestRef/>
        <Focus/>
        <br/>
-       <br/>
+       <br/> 
+       
+       
     </div>
   );
 }
